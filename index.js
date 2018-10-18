@@ -254,109 +254,109 @@ printReverse(['a','b','c']);
 // "b"
 // "A"
 */
-function printReverse(num){
-    for(let i = num.length - 1; i >= 0; i--)
-    console.log(num[i])
-}
-printReverse([3,6,2,5]);
+// function printReverse(num){
+//     for(let i = num.length - 1; i >= 0; i--)
+//     console.log(num[i])
+// }
+// printReverse([3,6,2,5]);
 
-// isUnniform() ***
+// // isUnniform() ***
 
-function isUniform(arr){
-    let first = arr[0];
-    for(let i = 1; i < arr.length; i++){
-        if(arr[i] !== first){
-            return false;
-        }
-    }
-    return true;
-}
+// function isUniform(arr){
+//     let first = arr[0];
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] !== first){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 
-console.log(isUniform([1,1,1,1]));
+// console.log(isUniform([1,1,1,1]));
 
-console.log(isUniform([1, 1, 12, 1]));
+// console.log(isUniform([1, 1, 12, 1]));
 
-console.log(isUniform([1, 1, 1, 3]));
+// console.log(isUniform([1, 1, 1, 3]));
 
 
 
 ///Sum Array
 
-function sumArray(arr){
-    //need empty arry to store values
-    // need a loop to iterate 
-  let total = 0;
-  arr.forEach(element => {
-      total += element;
-  });
-  return total;
+// function sumArray(arr){
+//     //need empty arry to store values
+//     // need a loop to iterate 
+//   let total = 0;
+//   arr.forEach(element => {
+//       total += element;
+//   });
+//   return total;
 
-}
-console.log(sumArray([1,2,3,4]));
+// }
+// console.log(sumArray([1,2,3,4]));
 
 
 ///------ Max number
 
-function max(arr){
-// create a variable to store maxium number
-        let max = arr[0];
-        // loop to itereate through array
-            for(let i = 0; i < arr.length; i++){
-            // if compare 
-            if(arr[i] > max){
-                max = arr[i]
-                }
-            }
-            // return value
-        return max;
+// function max(arr){
+// // create a variable to store maxium number
+//         let max = arr[0];
+//         // loop to itereate through array
+//             for(let i = 0; i < arr.length; i++){
+//             // if compare 
+//             if(arr[i] > max){
+//                 max = arr[i]
+//                 }
+//             }
+//             // return value
+//         return max;
 
-        }
-console.log(max([1,2,3,4]));
+//         }
+// console.log(max([1,2,3,4]));
 
-let posts = [
-    {
-        title: "Cats are mediocre",
-        author: "Leo",
-        comments: ["Awesome post", "terrible post"]
-    },
-    {
-        title: "Cats are actually awesome",
-        author: "Cat Luvr",
-        comments: ["<3", "Go to hell I hate you"]
-    }
-];
+// let posts = [
+//     {
+//         title: "Cats are mediocre",
+//         author: "Leo",
+//         comments: ["Awesome post", "terrible post"]
+//     },
+//     {
+//         title: "Cats are actually awesome",
+//         author: "Cat Luvr",
+//         comments: ["<3", "Go to hell I hate you"]
+//     }
+// ];
 
-console.log(posts[0].comments[0]);
+// console.log(posts[0].comments[0]);
 
-let someObject = {
-    friends: [
-        {name: "Malfoy"},
-        {name: "Crabbe"},
-        {name: "Goyle"}
-    ],
-    color: "baby blue",
-    isEvil: true
-}
+// let someObject = {
+//     friends: [
+//         {name: "Malfoy"},
+//         {name: "Crabbe"},
+//         {name: "Goyle"}
+//     ],
+//     color: "baby blue",
+//     isEvil: true
+// }
 
-console.log(someObject.friends[0].name)
+// console.log(someObject.friends[0].name)
 
-console.log(someObject)
+// console.log(someObject)
 
-let movies = [
+// let movies = [
    
-    {
-        title: "In Burges",
-        hasWatched: true, 
-        rating: 5
-    },
-    {
-        title: "Frozen",
-        hasWatched: false,
-        rating: 4.5
-    }
+//     {
+//         title: "In Burges",
+//         hasWatched: true, 
+//         rating: 5
+//     },
+//     {
+//         title: "Frozen",
+//         hasWatched: false,
+//         rating: 4.5
+//     }
 
-]
-console.log(movies);
+// ]
+// console.log(movies);
 
 // movies.forEach(function(movie){
 //     let results = "You Have ";
@@ -372,21 +372,21 @@ console.log(movies);
 // })
 
 
-function badAssMovies(){
-movies.forEach(function(movie){
-    //variable to store text
-    let results = "You have ";
-    if(movie.hasWatched){
-        results += "watched "
-    }else{
-        results += "not seen "
-    }
-        results += "\"" + movie.title + "\" - ";
-        results += movie.rating + " stars"
-        console.log(results)
-})
-}
-badAssMovies();
+// function badAssMovies(){
+// movies.forEach(function(movie){
+//     //variable to store text
+//     let results = "You have ";
+//     if(movie.hasWatched){
+//         results += "watched "
+//     }else{
+//         results += "not seen "
+//     }
+//         results += "\"" + movie.title + "\" - ";
+//         results += movie.rating + " stars"
+//         console.log(results)
+// })
+// }
+// badAssMovies();
 
 // let firstName = prompt("What is your name? ");
 // let lastName = prompt("What is your last name? ");
@@ -402,16 +402,16 @@ badAssMovies();
 //if age is negative
 // print error message 
 // create a prompt with user age
-let userAge = prompt("How old are you");
-if (userAge < 0){
-    console.log("You are just a baby!!")
-}if(userAge === 21 ){
-    console.log("Happy 21st Birthday, Have a drink on us!")
-}if(userAge % 2 !== 0){
-    console.log("You age is odd!")
-}if(userAge % Math.sqrt(userAge) === 0){
-    console.log("Your age is a perfect square!")
-}
+// let userAge = prompt("How old are you");
+// if (userAge < 0){
+//     console.log("You are just a baby!!")
+// }if(userAge === 21 ){
+//     console.log("Happy 21st Birthday, Have a drink on us!")
+// }if(userAge % 2 !== 0){
+//     console.log("You age is odd!")
+// }if(userAge % Math.sqrt(userAge) === 0){
+//     console.log("Your age is a perfect square!")
+// }
 
 //if age is 21`
 //print "happy 21st birthday!!"
@@ -420,3 +420,98 @@ if (userAge < 0){
 // print "your age is odd!"
 
 //super bonus if age is a perfec squre print perfect squre
+
+
+///-------------------
+
+
+//create secret number
+
+// let secretNumber = 4;
+// //ask user for guess
+// let strinGuess = prompt("Guess a number");
+// //check if guess is right
+// // Variable to convert string to number
+// let guess = Number(strinGuess);
+
+// if(guess === secretNumber){
+//     alert("You guessed the secret number!!!")
+// }else if(guess > secretNumber){
+//     alert("You guessed to high!!")
+  
+// }else{
+//     alert("You guessed to low!!")
+// }
+
+// let str = "hello-world";
+
+// let count = 0;
+
+// while(count < str.length){
+// console.log(str[count])
+// count++
+// }
+
+// let num = 1;
+// while(num <= 10){
+//     console.log(num)
+//     num += 2;
+// }
+
+// let nums = 1;
+
+// while(num <= 20){
+//     if(num % 4 === 0){
+//     console.log(num)
+//     }
+//   num++;
+// }
+
+//print all numbers between -10 and 19
+
+// varible start at -10 
+let num = -10;
+
+// while loop to count 
+while(num <= 20){
+    console.log(num);
+    num++; // counter
+}
+
+/*-------------------------------------*/
+// print all even numbers between 10 and 40
+let even = 10;
+
+while(even <= 40){
+    if(even % 2 === 0){
+        console.log(even)
+    }
+    even+=1;
+}
+
+
+// print all odd numbers between 300 and 333
+
+let odd = 300;
+
+while(odd <= 333){
+    if(odd % 2 !== 0){
+        console.log(odd)
+    }
+    
+ odd+=1
+}
+
+
+
+
+// print all numbers divisible by 5 and 3 between 5 and 50 
+
+let div = 5;
+
+while(div <= 50){
+    if(div % 3 === 0 && div % 5 === 0){
+        console.log(div);
+    }
+    div+=1;
+}
