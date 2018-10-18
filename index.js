@@ -395,5 +395,28 @@ badAssMovies();
 // console.log("You are " + userAge + " yrs old!");
 
 
-let yourAge = prompt("How old are you ? ");
-console.log( "You are roughly " + yourAge + " " + Math.floor(yourAge * 365.25) + " days old");
+// let yourAge = prompt("How old are you ? ");
+// console.log( "You are roughly " + yourAge + " " + Math.floor(yourAge * 365.25) + " days old");
+
+
+//if age is negative
+// print error message 
+// create a prompt with user age
+let userAge = prompt("How old are you");
+if (userAge < 0){
+    console.log("You are just a baby!!")
+}if(userAge === 21 ){
+    console.log("Happy 21st Birthday, Have a drink on us!")
+}if(userAge % 2 !== 0){
+    console.log("You age is odd!")
+}if(userAge % Math.sqrt(userAge) === 0){
+    console.log("Your age is a perfect square!")
+}
+
+//if age is 21`
+//print "happy 21st birthday!!"
+
+// if age is odd
+// print "your age is odd!"
+
+//super bonus if age is a perfec squre print perfect squre
