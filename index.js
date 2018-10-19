@@ -470,48 +470,65 @@ printReverse(['a','b','c']);
 //print all numbers between -10 and 19
 
 // varible start at -10 
-let num = -10;
+// let num = -10;
 
 // while loop to count 
-while(num <= 20){
-    console.log(num);
-    num++; // counter
-}
+// while(num <= 20){
+//     console.log(num);
+//     num++; // counter
+// }
 
 /*-------------------------------------*/
 // print all even numbers between 10 and 40
-let even = 10;
+// let even = 10;
 
-while(even <= 40){
-    if(even % 2 === 0){
-        console.log(even)
-    }
-    even+=1;
-}
+// while(even <= 40){
+//     if(even % 2 === 0){
+//         console.log(even)
+//     }
+//     even+=1;
+// }
 
 
 // print all odd numbers between 300 and 333
 
-let odd = 300;
+// let odd = 300;
 
-while(odd <= 333){
-    if(odd % 2 !== 0){
-        console.log(odd)
-    }
+// while(odd <= 333){
+//     if(odd % 2 !== 0){
+//         console.log(odd)
+//     }
     
- odd+=1
-}
+//  odd+=1
+// }
 
 
 
 
 // print all numbers divisible by 5 and 3 between 5 and 50 
 
-let div = 5;
+// let div = 5;
 
-while(div <= 50){
-    if(div % 3 === 0 && div % 5 === 0){
-        console.log(div);
-    }
-    div+=1;
+// while(div <= 50){
+//     if(div % 3 === 0 && div % 5 === 0){
+//         console.log(div);
+//     }
+//     div+=1;
+// }
+
+
+// let answer = prompt("Are we there yet?");
+// //create a loop to repeat the are we there yet question
+// while(answer !== "yes" && answer !== "yeah"){
+//    let answer = prompt("Are we there yet?")
+// }
+// alert("Yay, We made it!!!")
+
+//version 2
+
+let answer = prompt("Are we there yet?");
+
+while(answer.indexOf("yes") === -1) {
+    let answer = prompt("Are we there yet?");
 }
+alert("YAY, WE MADE IT!!")
