@@ -526,9 +526,57 @@ printReverse(['a','b','c']);
 
 //version 2
 
-let answer = prompt("Are we there yet?");
+// let answer = prompt("Are we there yet?");
 
-while(answer.indexOf("yes") === -1) {
-    let answer = prompt("Are we there yet?");
+// while(answer.indexOf("yes") === -1) {
+//     let answer = prompt("Are we there yet?");
+// }
+// alert("YAY, WE MADE IT!!")
+
+
+// let str = "Leo";
+
+// for(let i = 0; i < str.length; i++){
+//     console.log(str[i]);
+// }
+
+// let strs = "leo";
+// let count = 0;
+
+// while(count < strs.length){
+//     console.log(str[count])
+//     count++;
+// }
+
+
+// print all numbers between -10 and 19
+
+// creat a variable to start the count
+// for loop 
+for(let count = -10; count < 19; count++){
+    console.log(count);
 }
-alert("YAY, WE MADE IT!!")
+
+// print all even numbers between 10 and 40
+
+for(let even = 10; even < 40; even++){
+    // if statement for the condition
+    if(even % 2 === 0){
+        console.log(even);
+    }
+}
+
+//print all odd numbers between 300 and 333
+for(let odd = 300; odd < 333; odd++){
+    if(odd % 2 !== 0){
+        console.log(odd);
+    }
+}
+
+// print all numbers devisible by 5 and 3 between 5 and 50 
+
+for(let modulo = 5; modulo < 50; modulo++){
+    if(modulo % 3 === 0 && modulo % 5 === 0){
+        console.log(modulo)
+    }
+}
